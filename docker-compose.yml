@@ -7,7 +7,7 @@ services:
     container_name: 'jupyter'
     command: "start-notebook.sh --NotebookApp.token='' --NotebookApp.password=''"
     ports:
-      - "8888:8888"
+      - "80:8888"
       - "4040:4040"
     volumes:
       - ./notebooks/HDFS-TP01.ipynb:/home/jovyan/HDFS/HDFS-TP01.ipynb
