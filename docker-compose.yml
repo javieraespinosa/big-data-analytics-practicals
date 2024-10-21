@@ -7,13 +7,12 @@ services:
     container_name: 'jupyter'
     command: "start-notebook.sh --NotebookApp.token='' --NotebookApp.password=''"
     ports:
-      - "80:8888"
+      - "8888:8888"
       - "4040:4040"
     volumes:
-      - ./notebooks/HDFS-TP01.ipynb:/home/jovyan/HDFS/HDFS-TP01.ipynb
-      - ./notebooks/Spark_introduction.ipynb:/home/jovyan/Spark/Spark_introduction.ipynb
-      - ./notebooks/Spark_TP01_DF.ipynb:/home/jovyan/Spark/Spark_TP01_DF.ipynb
-      - ./notebooks/Spark_TP02_DF.ipynb:/home/jovyan/Spark/Spark_TP02_DF.ipynb
+      - ./data:/home/jovyan/data
+      - ./HDFS:/home/jovyan/HDFS
+      - ./Spark:/home/jovyan/Spark
 
   spark-master:
     image: guizmo38/spark-master:3.2.1-hadoop3.2-python3.7

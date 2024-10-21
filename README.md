@@ -17,13 +17,26 @@
 3. Pull the required docker images:
 
     ```sh
-    docker-compose pull
+    docker compose pull
     ```
 
 4. Test the jupyter image. 
 
     ```sh
-    docker-compose up jupyter
+    docker compose up jupyter
     ```
 
 5. Visit [localhost:8888](http://localhost:8888). If you see the Jupyter Lab, you are ready to go.
+
+## Hadoop/Spark Cluster
+
+The practicals assume a Hadoop/Spark cluster with the following architecture: 
+
+![cluster architecture](./cluster-architecture.png)
+
+* Start the cluster as follows:
+
+    ```sh
+    docker compose up jupyter
+    ```
+
