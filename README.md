@@ -37,7 +37,7 @@ The practicals assume a Hadoop/Spark cluster with the following architecture:
 * Start the cluster as follows:
 
     ```sh
-    docker compose up jupyter
+    docker compose up
     ```
 
 ## Credits
