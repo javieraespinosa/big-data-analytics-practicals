@@ -40,3 +40,6 @@ The practicals assume a Hadoop/Spark cluster with the following architecture:
     docker compose up jupyter
     ```
 
+## Credits
+
+The original material in this repository was developed by [Osman AIDEL](https://annuaire.in2p3.fr/54-8735/osman-aidel), a research engineer from IN2P3 CNRS Computing Center.
